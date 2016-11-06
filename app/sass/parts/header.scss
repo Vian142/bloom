@@ -1,0 +1,171 @@
+.main-header {
+  background-image: url('../img/bg/header-1.jpg');;
+  min-height: 750px;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+
+  &__top-content {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 10px 15px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__main-content {
+    position: absolute;
+    max-width: 1000px;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__title {
+      font-family: $font-family1;
+      font-size: 56px;
+      color: $white;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 5px 0;
+    }
+    &__description {
+      padding: 10px 0;
+      margin: 0;
+      font-family: $font-family1;
+      font-size: 18px;
+      color: $white;
+      line-height: 1.5;
+      text-align: center;
+    }
+    &__btn-wrap {
+      padding: 20px 0;
+      text-align: center;
+      &__btn {
+      }
+    }
+  }
+}
+
+.logo-container {
+  &__logo-wrap {
+    max-width: 170px;
+    &__image {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+/* navigation */
+.main-menu {
+  &__list {
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    &__item {
+      display: block;
+      position: relative;
+
+      color: #fff;
+      list-style: none;
+      padding: 0 15px;
+      &__link {
+
+        font-family: $font-family1;
+        font-size: 15px;
+        color: $white;
+        line-height: 1.7;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        transition: all 0.2s ease;
+
+        &:focus,
+        &:hover {
+          color: $purple;
+        }
+      }
+
+      &__dropdown-menu {
+        display: none;
+        box-sizing: border-box;
+        border-radius: 6px;
+        background-color: rgb(245, 245, 245);
+        position: absolute;
+        width: 160px;
+        padding: 10px 5px;
+        top: 200%;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        &__item {
+          padding: 5px 0;
+          list-style: none;
+          border-bottom: 1px solid rgb(228, 228, 228);
+
+          &__link {
+            display: block;
+            position: relative;
+            font-family: $font-family1;
+            font-size: 15px;
+            line-height: 1.2;
+            padding-left: 10px;
+            color: $text;
+            font-weight: bold;
+            text-decoration: none;
+
+            &:before {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translate(0, -50%);
+              display: block;
+              content: '';
+              height: 100%;
+              width: 3px;
+              background: $purple;
+              border-radius: 5px;
+            }
+
+            &:focus,
+            &:hover {
+
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+/* active class in dropdow-menu */
+.dropdown-menu {
+  &__angle-down {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &--active {
+    display: block;
+  }
+}
+
+

@@ -1,0 +1,43 @@
+.section-features {
+  padding: 25px 0;
+}
+
+.features-columns {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  &__item {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__icon {
+      flex: 0 0 70px;
+      max-width: 70px;
+      &__image {
+      }
+    }
+    &__title {
+      padding: 5px 10px;
+      font-family: $font-family1;
+      font-size: 21px;
+      color: $text;
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    &__description {
+      padding: 10px ;
+      margin: 0;
+      font-family: $font-family1;
+      font-size: 15px;
+      color: rgb(13, 17, 61);
+      line-height: 1.7;
+      text-align: left;
+    }
+
+  }
+}

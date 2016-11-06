@@ -1,0 +1,31 @@
+footer.main-footer
+    .container
+        .newletter-block
+            .newletter-block__wrap
+                .newletter-block__wrap__text
+                .newletter-block__wrap__form
+                    form.form-newletter
+                        input(type="email", placeholder="Enter Your Email Address").form-newletter__input
+                        imput(type="submit", value="subscribe").form-newletter__btn-submit
+    .container
+        .main-footer__columns
+            .main-footer__columns__item
+                .logo-container
+                    .logo-container__logo-wrap
+                        img(src="img/logo.png").logo-container__logo-wrap__image
+                .footer-content
+                    p
+                        | Lorem Ipsum is simply dummy text of the
+                        | printing and typesetting industry. Lorem Ipsum
+                        | has been the industry's standard dummy text ever since
+                        | the 1500s, when an unknown printer took a galley of type and
+                        | scrambled it to make a type specimen book.
+            .main-footer__columns__item
+                .footer-content
+                    +menu('footer-content__list', footerList1)
+            .main-footer__columns__item
+                .footer-content
+                    +menu('footer-content__list', footerList2)
+            .main-footer__columns__item
+                .footer-content
+                    +menu('footer-content__list', footerList3)

@@ -1,0 +1,13 @@
+- var mainMenu = {"Home": "/index.html", "About us": "/about.html" }
+
+
+- var footerList1 = {"Home": "/index.html", "About us": "/about.html", "Services": "/about.html", "Portfolio": "/about.html" }
+- var footerList2 = {"Legal notice": "/index.html", "Career": "/about.html", "Support": "/about.html", "sitemap": "/about.html" }
+- var footerList3 = {"Team": "/index.html", "Testimonial": "/about.html", "Price": "/about.html", "Blog": "/about.html" }
+
+
+mixin menu (classList, dataList)
+    ul(class="#{classList}")
+        each href, title_link in dataList
+            li(class="#{classList}__item")
+                a(class="#{classList}__link", href=href)=title_link

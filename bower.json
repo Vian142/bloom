@@ -1,0 +1,20 @@
+{
+  "name": "Bloom",
+  "description": "Bloom site",
+  "dependencies": {
+    "fontawesome": "^4.5.0",
+    "normalize-scss": "^3.0.0"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "authors": [
+    "Ivan Popov <vian142@gmail.com>"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

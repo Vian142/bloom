@@ -1,0 +1,326 @@
+include parts/_mixin
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title Bloom index
+        meta(name='description', content='')
+        meta(name='robots', content='noindex, nofollow')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        meta(name='theme-color', content='#2f8eaa')
+        link(rel='stylesheet', href='css/libs.min.css')
+        link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', href='css/media.css')
+    body
+        header.main-header
+            .main-header__top-content
+                .logo-container
+                    .logo-container__logo-wrap
+                        img(src="img/logo.png").logo-container__logo-wrap__image
+                nav.main-menu
+                    ul.main-menu__list
+                        li.main-menu__list__item
+                            a(href="#").main-menu__list__item__link
+                                | Home
+                        li.main-menu__list__item
+                            a(href="#").main-menu__list__item__link
+                                | About us
+                            ul.main-menu__list__item__dropdown-menu
+                                span.dropdown-menu__angle-down
+                                    i.fa.fa-angle-down
+                                li.main-menu__list__item__dropdown-menu__item
+                                    a(href="#").main-menu__list__item__dropdown-menu__item__link
+                                        | Who We Are
+                                li.main-menu__list__item__dropdown-menu__item
+                                    a(href="#").main-menu__list__item__dropdown-menu__item__link
+                                        | Awards
+                                li.main-menu__list__item__dropdown-menu__item
+                                    a(href="#").main-menu__list__item__dropdown-menu__item__link
+                                        | Clients
+                                li.main-menu__list__item__dropdown-menu__item
+                                    a(href="#").main-menu__list__item__dropdown-menu__item__link
+                                        | Career
+                        li.main-menu__list__item
+                            a(href="#").main-menu__list__item__link
+                                | Services
+                        li.main-menu__list__item
+                            a(href="#").main-menu__list__item__link
+                                | Portfolio
+                        li.main-menu__list__item
+                            a(href="#").main-menu__list__item__link
+                                | Team
+                        li.main-menu__list__item
+                            a(href="#").main-menu__list__item__link
+                                | Price
+
+            .main-header__main-content
+                .main-header__main-content__title
+                    | creative agency&nbsp;
+                    span.text-purple
+                        |Design
+
+                .main-header__main-content__description
+                    | Lorem Ipsum has been the industry's standard
+                    | dummy text ever since the 1500s, when an unknown
+                    | printer took a galley of type and scrambled it to
+                    | make a type specimen book.
+                .main-header__main-content__btn-wrap
+                    a(href="/").btn
+                        | get started
+                    a(href="/").btn
+                        | take a tour
+
+        section.section-description
+            .container
+                .section-description__wrapper
+                    .section-description__wrapper__left-block
+                        .section-content
+                            .section-content__title
+                                b
+                                    |  we are
+                                span.text-purple
+                                    |  bloom
+                                <br>
+                                span.text-light
+                                    |  creative agency
+                            p
+                                | Lorem Ipsum is simply dummy text of the
+                                | printing and typesetting industry. Lorem Ipsu
+                                | has been the industry's standard dummy text ever since the
+                                | 1500s, when an unknown printer took a galley of type and
+                                | scrambled it to make a type specimen book. It has survived not
+                                | only five centuries, but also the leap into electronic typesetting,
+                                | remaining essentially unchanged.
+                            p
+                                a(href="/").btn.btn--purple
+                                    | read more
+
+                    .section-description__wrapper__right-block
+                        .section-content
+                            .section-description__content__image-wrap
+                                img(src="img/image/image-1.jpg")
+        .line
+
+        section.section-features
+            .features-columns
+                .features-columns__item
+                    .features-columns__item__icon
+                        img(src="img/icons/icon-1.png").features-columns__item__icon__image
+                    .features-columns__item__title
+                            | Create
+                    .features-columns__item__description
+                            | Lorem Ipsum has been the industry's standardu
+                            | text ever since the 1500s, when an unknown printer
+                            | took a galley of type and scrambled it to make a type specimen book.
+
+                .features-columns__item
+                    .features-columns__item__icon
+                        img(src="img/icons/icon-2.png").features-columns__item__icon__image
+                    .features-columns__item__title
+                            | Startup
+                    .features-columns__item__description
+                            | Lorem Ipsum has been the industry's standardu
+                            | text ever since the 1500s, when an unknown printer
+                            | took a galley of type and scrambled it to make a type specimen book.
+
+                .features-columns__item
+                    .features-columns__item__icon
+                        img(src="img/icons/icon-3.png").features-columns__item__icon__image
+                    .features-columns__item__title
+                            | Speed
+                    .features-columns__item__description
+                            | Lorem Ipsum has been the industry's standardu
+                            | text ever since the 1500s, when an unknown printer
+                            | took a galley of type and scrambled it to make a type specimen book.
+
+        section.section-slogan
+            .container
+                .section-slogan__title
+                    | A mobile first digital products lab.
+                .section-slogan__btn-wrap
+                    a(href="#").btn.btn--purple-light
+                        | Learn more
+
+        section.section-services
+            .container
+                .section-services__title
+                    |   Services
+                .services-block
+                    .services-block__item
+                        .services-block__item__image-services
+                            img(src="img/service/service-1.jpg", alt="service").services-block__item__image-services__image
+                        .services-block__item__content-service
+                            .services-block__item__content-service__title
+                                | Strategy
+                            .services-block__item__content-service__description
+                                p
+                                    | Lorem ipsum has been the industry`s
+                                    | standatd bummy text ever since make a tyoe a speciment book.
+                            .services-block__item__content-service__btn-wrap
+                                a(href="#").services-block__item__content-service__btn-wrap__link
+                                    i.fa.fa-long-arrow-right
+                    .services-block__item
+                        .services-block__item__image-services
+                            img(src="img/service/service-2.jpg", alt="service").services-block__item__image-services__image
+                        .services-block__item__content-service
+                            .services-block__item__content-service__title
+                                | User experince
+                            .services-block__item__content-service__description
+                                p
+                                    | Lorem ipsum has been the industry`s
+                                    | standatd bummy text ever since make a tyoe a speciment book.
+                            .services-block__item__content-service__btn-wrap
+                                a(href="#").services-block__item__content-service__btn-wrap__link
+                                    i.fa.fa-arrow-right
+                    .services-block__item
+                        .services-block__item__image-services
+                            img(src="img/service/service-3.jpg", alt="service").services-block__item__image-services__image
+                        .services-block__item__content-service
+                            .services-block__item__content-service__title
+                                | New technology
+                            .services-block__item__content-service__description
+                                p
+                                    | Lorem ipsum has been the industry`s
+                                    | standatd bummy text ever since make a tyoe a speciment book.
+                            .services-block__item__content-service__btn-wrap
+                                a(href="#").services-block__item__content-service__btn-wrap__link
+                                    i.fa.fa-arrow-right
+                    .services-block__item
+                        .services-block__item__image-services
+                            img(src="img/service/service-4.jpg", alt="service").services-block__item__image-services__image
+                        .services-block__item__content-service
+                            .services-block__item__content-service__title
+                                | CMS
+                            .services-block__item__content-service__description
+                                p
+                                    | Lorem ipsum has been the industry`s
+                                    | standatd bummy text ever since make a tyoe a speciment book.
+                            .services-block__item__content-service__btn-wrap
+                                a(href="#").services-block__item__content-service__btn-wrap__link
+                                    i.fa.fa-arrow-right
+                    .services-block__item
+                        .services-block__item__image-services
+                            img(src="img/service/service-5.jpg", alt="service").services-block__item__image-services__image
+                        .services-block__item__content-service
+                            .services-block__item__content-service__title
+                                | Smart tv app design
+                            .services-block__item__content-service__description
+                                p
+                                    | Lorem ipsum has been the industry`s
+                                    | standatd bummy text ever since make a tyoe a speciment book.
+                            .services-block__item__content-service__btn-wrap
+                                a(href="#").services-block__item__content-service__btn-wrap__link
+                                    i.fa.fa-arrow-right
+                    .services-block__item.services-block__item--last
+                        .services-block__item__image-services
+
+                        .services-block__item__more-service
+                            a(href="#").services-block__item__more-service__link
+                                | all services
+
+
+        section.section-support
+            .container
+                .section-support__wrap
+                    .section-support__wrap__left-block
+                        .section-support__content__img-wrap
+                            img(src="#", alt="support agent").section-support__content__img-wrap__image
+                    .section-support__wrap__right-block
+                        .section-support__content__text
+                            h2
+                                | Great Support System
+                            p
+                                | Lorem ipsum has been the industry`s
+                                | standatd bummy text ever since make a tyoe a speciment book.
+                            ul
+                                li
+                                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                li
+                                    | Morbi quis felis in arcu congue posuere.
+                                li
+                                    | Vivamus euismod felis ut lacus dictum condimentum.
+                                li
+                                    | Praesent laoreet orci commodo dictum aliquet.
+
+        section.section-contact.bg-purple
+            .container
+                .section-contact__wrap
+                    .section-contact__wrap__text
+                        | Contact with us for start your dream project
+                    .section-contact__wrap__btn-wrap
+                        a(href="#").btn.btn-white
+                            | Contact us
+
+        section.section-portfolio
+            .container
+                .section-portfolio__title
+                    | Portfolio
+                .portfolio-block
+                    .portfolio-block__item
+                        .portfolio-block__item__image-work
+                            img(src="img/portfolio/work-1.jpg").portfolio-block__item__image-work__image
+                    .portfolio-block__item
+                        .portfolio-block__item__image-work
+                            img(src="img/portfolio/work-2.jpg").portfolio-block__item__image-work__image
+                    .portfolio-block__item
+                        .portfolio-block__item__image-work
+                            img(src="img/portfolio/work-3.jpg").portfolio-block__item__image-work__image
+                    .portfolio-block__item
+                        .portfolio-block__item__image-work
+                            img(src="img/portfolio/work-4.jpg").portfolio-block__item__image-work__image
+                    .portfolio-block__item
+                        .portfolio-block__item__image-work
+                            img(src="img/portfolio/work-5.jpg").portfolio-block__item__image-work__image
+                    .portfolio-block__item
+                        .portfolio-block__item__image-work
+                            img(src="img/portfolio/work-6.jpg").portfolio-block__item__image-work__image
+
+        section.section-blog
+            .container
+                .section-blog__list
+                    .section-blog__list__item
+                        .section-blog__list__item__title-post
+                            .section-blog__list__item__title-post__link
+                                | Lorem
+                    .section-blog__list__item__date-post
+                        | 29 october 2016
+                    .section-blog__list__item__author-block
+                        | by &nbsp;
+                        a(href="#").section-blog__list__item__author-block__author-post
+                            | Ferdi Uzmec
+                    .section-blog__list__item
+                        .section-blog__list__item__title-post
+                            .section-blog__list__item__title-post__link
+                                | Lorem
+                    .section-blog__list__item__date-post
+                        | 29 october 2016
+                    .section-blog__list__item__author-block
+                        | by &nbsp;
+                        a(href="#").section-blog__list__item__author-block__author-post
+                            | Ferdi Uzmec
+                    .section-blog__list__item
+                        .section-blog__list__item__title-post
+                            .section-blog__list__item__title-post__link
+                                | Lorem
+                    .section-blog__list__item__date-post
+                        | 29 october 2016
+                    .section-blog__list__item__author-block
+                        | by &nbsp;
+                        a(href="#").section-blog__list__item__author-block__author-post
+                            | Ferdi Uzmec
+                    .section-blog__list__item
+                        .section-blog__list__item__title-post
+                            .section-blog__list__item__title-post__link
+                                | Lorem
+                    .section-blog__list__item__date-post
+                        | 29 october 2016
+                    .section-blog__list__item__author-block
+                        | by &nbsp;
+                        a(href="#").section-blog__list__item__author-block__author-post
+                            | Ferdi Uzmec
+
+        include parts/footer
+        script(src="https://code.jquery.com/jquery-2.2.4.js")
+        script(src="js/libs.min.js")
+        script(src="js/main.js")
