@@ -7,4 +7,8 @@ $(document).ready(function(){
         }).imagefill();
 
 
+    $('.portfolio-block__item__image-work').imagesLoaded(function() {
+        console.log('all images are loaded');
+    }).imagefill();
+
 });

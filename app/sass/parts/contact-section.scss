@@ -1,0 +1,18 @@
+.section-contact {
+  padding: 30px 0;
+  &__wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+      font-family: $font-family1;
+      font-size: 24px;
+      color: $white;
+      line-height: 1.4;
+      font-weight: bold;
+    }
+    &__btn-wrap {
+    }
+  }
+}

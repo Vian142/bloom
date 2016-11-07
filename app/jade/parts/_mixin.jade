@@ -10,4 +10,4 @@ mixin menu (classList, dataList)
     ul(class="#{classList}")
         each href, title_link in dataList
             li(class="#{classList}__item")
-                a(class="#{classList}__link", href=href)=title_link
+                a(class="#{classList}__item__link", href=href)=title_link

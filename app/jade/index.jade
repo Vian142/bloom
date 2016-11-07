@@ -99,7 +99,7 @@ html(lang='en')
                     .section-description__wrapper__right-block
                         .section-content
                             .section-description__content__image-wrap
-                                img(src="img/image/image-1.jpg")
+                                img(src="img/image/image-1.jpg").section-description__content__image-wrap__image
         .line
 
         section.section-features
@@ -214,7 +214,7 @@ html(lang='en')
                                     i.fa.fa-arrow-right
                     .services-block__item.services-block__item--last
                         .services-block__item__image-services
-
+                            img(src="img/service/service-6.jpg", alt="service").services-block__item__image-services__image
                         .services-block__item__more-service
                             a(href="#").services-block__item__more-service__link
                                 | all services
@@ -225,14 +225,18 @@ html(lang='en')
                 .section-support__wrap
                     .section-support__wrap__left-block
                         .section-support__content__img-wrap
-                            img(src="#", alt="support agent").section-support__content__img-wrap__image
+                            img(src="img/people/people-1.png", alt="support agent").section-support__content__img-wrap__image
                     .section-support__wrap__right-block
-                        .section-support__content__text
+                        .section-support__content__text.section-content
                             h2
                                 | Great Support System
                             p
-                                | Lorem ipsum has been the industry`s
-                                | standatd bummy text ever since make a tyoe a speciment book.
+                                | Lorem Ipsum has been the industry's
+                                | standardu text ever since the 1500s,
+                                | when an unknown printer took a galley
+                                | of type and scrambled it to make a type
+                                | specimen book.
+
                             ul
                                 li
                                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -260,65 +264,61 @@ html(lang='en')
                     .portfolio-block__item
                         .portfolio-block__item__image-work
                             img(src="img/portfolio/work-1.jpg").portfolio-block__item__image-work__image
+                        a(href="#").portfolio-block__item__info-work
+                            .portfolio-block__item__info-work__name-work
+                                | Project Name
+                            .portfolio-block__item__info-work__category-work
+                                | UX design
                     .portfolio-block__item
                         .portfolio-block__item__image-work
                             img(src="img/portfolio/work-2.jpg").portfolio-block__item__image-work__image
+                        a(href="#").portfolio-block__item__info-work
+                            .portfolio-block__item__info-work__name-work
+                                | Project Name
+                            .portfolio-block__item__info-work__category-work
+                                | UX design
                     .portfolio-block__item
                         .portfolio-block__item__image-work
                             img(src="img/portfolio/work-3.jpg").portfolio-block__item__image-work__image
-                    .portfolio-block__item
-                        .portfolio-block__item__image-work
-                            img(src="img/portfolio/work-4.jpg").portfolio-block__item__image-work__image
-                    .portfolio-block__item
-                        .portfolio-block__item__image-work
-                            img(src="img/portfolio/work-5.jpg").portfolio-block__item__image-work__image
-                    .portfolio-block__item
-                        .portfolio-block__item__image-work
-                            img(src="img/portfolio/work-6.jpg").portfolio-block__item__image-work__image
+                        a(href="#").portfolio-block__item__info-work
+                            .portfolio-block__item__info-work__name-work
+                                | Project Name
+                            .portfolio-block__item__info-work__category-work
+                                | UX design
 
         section.section-blog
             .container
                 .section-blog__list
                     .section-blog__list__item
                         .section-blog__list__item__title-post
-                            .section-blog__list__item__title-post__link
-                                | Lorem
-                    .section-blog__list__item__date-post
-                        | 29 october 2016
-                    .section-blog__list__item__author-block
-                        | by &nbsp;
-                        a(href="#").section-blog__list__item__author-block__author-post
-                            | Ferdi Uzmec
+                            a(href="#").section-blog__list__item__title-post__link
+                                | Breaking Out Of The Box: Design Inspiration
+                        .section-blog__list__item__date-post
+                            | 29 october 2016
+                        .section-blog__list__item__author-block
+                            | by &nbsp;
+                            a(href="#").section-blog__list__item__author-block__author-link
+                                | Ferdi Uzmec
                     .section-blog__list__item
                         .section-blog__list__item__title-post
-                            .section-blog__list__item__title-post__link
-                                | Lorem
-                    .section-blog__list__item__date-post
-                        | 29 october 2016
-                    .section-blog__list__item__author-block
-                        | by &nbsp;
-                        a(href="#").section-blog__list__item__author-block__author-post
-                            | Ferdi Uzmec
+                            a(href="#").section-blog__list__item__title-post__link
+                                | Creativity Under The Microscope: Running A UI Design Critique
+                        .section-blog__list__item__date-post
+                            | 29 october 2016
+                        .section-blog__list__item__author-block
+                            | by &nbsp;
+                            a(href="#").section-blog__list__item__author-block__author-link
+                                | Ferdi Uzmec
                     .section-blog__list__item
                         .section-blog__list__item__title-post
-                            .section-blog__list__item__title-post__link
-                                | Lorem
-                    .section-blog__list__item__date-post
-                        | 29 october 2016
-                    .section-blog__list__item__author-block
-                        | by &nbsp;
-                        a(href="#").section-blog__list__item__author-block__author-post
-                            | Ferdi Uzmec
-                    .section-blog__list__item
-                        .section-blog__list__item__title-post
-                            .section-blog__list__item__title-post__link
-                                | Lorem
-                    .section-blog__list__item__date-post
-                        | 29 october 2016
-                    .section-blog__list__item__author-block
-                        | by &nbsp;
-                        a(href="#").section-blog__list__item__author-block__author-post
-                            | Ferdi Uzmec
+                            a(href="#").section-blog__list__item__title-post__link
+                                | Improve Your Designs With The Principles Of Continuation And Common Fate (Part Three)
+                        .section-blog__list__item__date-post
+                            | 29 october 2016
+                        .section-blog__list__item__author-block
+                            | by &nbsp;
+                            a(href="#").section-blog__list__item__author-block__author-link
+                                | Ferdi Uzmec
 
         include parts/footer
         script(src="https://code.jquery.com/jquery-2.2.4.js")

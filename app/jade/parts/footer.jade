@@ -3,17 +3,22 @@ footer.main-footer
         .newletter-block
             .newletter-block__wrap
                 .newletter-block__wrap__text
+                    .newletter-block__wrap__text__title
+                        | Register for newletter
+                    .newletter-block__wrap__text__description
+                        | Get Latest Compary News
                 .newletter-block__wrap__form
                     form.form-newletter
                         input(type="email", placeholder="Enter Your Email Address").form-newletter__input
-                        imput(type="submit", value="subscribe").form-newletter__btn-submit
+                        button.form-newletter__btn-submit.btn
+                            | subcribe
     .container
         .main-footer__columns
-            .main-footer__columns__item
+            .main-footer__columns__item.main-footer__columns__item--main-column
                 .logo-container
                     .logo-container__logo-wrap
                         img(src="img/logo.png").logo-container__logo-wrap__image
-                .footer-content
+                .main-footer__footer-content
                     p
                         | Lorem Ipsum is simply dummy text of the
                         | printing and typesetting industry. Lorem Ipsum
@@ -21,11 +26,29 @@ footer.main-footer
                         | the 1500s, when an unknown printer took a galley of type and
                         | scrambled it to make a type specimen book.
             .main-footer__columns__item
-                .footer-content
-                    +menu('footer-content__list', footerList1)
+                .main-footer__footer-content
+                    +menu('main-footer__footer-content__list', footerList1)
             .main-footer__columns__item
-                .footer-content
-                    +menu('footer-content__list', footerList2)
+                .main-footer__footer-content
+                    +menu('main-footer__footer-content__list', footerList2)
             .main-footer__columns__item
-                .footer-content
-                    +menu('footer-content__list', footerList3)
+                .main-footer__footer-content
+                    +menu('main-footer__footer-content__list', footerList3)
+    .container
+        .main-footer__bottom-content
+            .copyright-block
+                .copyright-block__content
+                    a(href="#").copyright-block__content__link
+                        | © 2016 BLOM
+                    | - All Rights Reserved
+            .social-block
+                .social-block__list
+                    .social-block__list__item
+                        a(href="#").social-block__list__item__link
+                            i.fa.fa-facebook
+                    .social-block__list__item
+                        a(href="#").social-block__list__item__link
+                            i.fa.fa-twitter
+                    .social-block__list__item
+                        a(href="#").social-block__list__item__link
+                            i.fa.fa-instagram

@@ -1,0 +1,35 @@
+.section-support {
+  &__wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    &__left-block {
+      flex: 1 1 50%;
+      display: flex;
+      justify-content: center;
+    }
+    &__right-block {
+      flex: 1 1 50%;
+    }
+  }
+
+  &__content {
+    &__img-wrap {
+      display: flex;
+      align-items: flex-end;
+      &__image {
+        display: block;
+      }
+    }
+    &__text {
+
+      ul {
+        li {
+          font-size: 15px;
+          font-family: $font-family1;
+          color: rgb(97, 97, 97);
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
