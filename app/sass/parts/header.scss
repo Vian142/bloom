@@ -1,6 +1,6 @@
 .main-header {
   background-image: url('../img/bg/header-1.jpg');;
-  min-height: 750px;
+  min-height: 550px;
   background-position: top center;
   background-size: cover;
   position: relative;
@@ -21,15 +21,15 @@
 
   &__main-content {
     position: absolute;
-    max-width: 1000px;
+    max-width: 1100px;
     box-sizing: border-box;
-    padding: 5px 20px;
+    padding: 5px 15px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     &__title {
       font-family: $font-family1;
-      font-size: 56px;
+      font-size: 3rem;
       color: $white;
       font-weight: bold;
       line-height: 1;
@@ -42,7 +42,7 @@
       padding: 10px 0;
       margin: 0;
       font-family: $font-family1;
-      font-size: 18px;
+      font-size: 1.285rem;
       color: $white;
       line-height: 1.5;
       text-align: center;
@@ -57,6 +57,8 @@
 }
 
 .logo-container {
+  flex-shrink: 0;
+  flex-grow: 0;
   &__logo-wrap {
     max-width: 170px;
     &__image {
@@ -68,10 +70,104 @@
 
 /* navigation */
 .main-menu {
+  &__btn {
+    display: none;
+    position: fixed;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    top: 15px;
+    right: 15px;
+    box-sizing: border-box;
+    width: 40px;
+    height: 44px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 200;
+    span {
+      display: block;
+      position: absolute;
+      height: 6px;
+      width: 50%;
+      background: $purple-light;
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(even) {
+        left: 50%;
+        border-radius: 0 8px 8px 0;
+      }
+      &:nth-child(odd) {
+        left: 0;
+        border-radius: 9px 0 0 9px;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        top: 4px;
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        top: 17px;
+      }
+      &:nth-child(5),
+      &:nth-child(6) {
+        top: 31px;
+      }
+    }
+
+    /**/
+    /**/
+    /**/
+
+    &.open span:nth-child(1),
+    &.open span:nth-child(6) {
+      transform: rotate(45deg);
+    }
+
+    &.open span:nth-child(2),
+    &.open span:nth-child(5) {
+      transform: rotate(-45deg);
+    }
+
+    &.open span:nth-child(1) {
+      left: 3px;
+      top: 10px;
+    }
+
+    &.open span:nth-child(2) {
+      left: calc(43% - 0px);
+      top: 10px;
+    }
+
+    &.open span:nth-child(3) {
+      left: -40%;
+      opacity: 0;
+    }
+
+    &.open span:nth-child(4) {
+      left: 100%;
+      opacity: 0;
+    }
+
+    &.open span:nth-child(5) {
+      left: 3px;
+      top: 24px;
+    }
+
+    &.open span:nth-child(6) {
+      left: calc(43% - 0px);
+      top: 24px;
+    }
+    /**/
+  }
+
   &__list {
     padding: 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     &__item {
       display: block;
@@ -81,7 +177,6 @@
       list-style: none;
       padding: 0 15px;
       &__link {
-
         font-family: $font-family1;
         font-size: 15px;
         color: $white;
@@ -168,4 +263,71 @@
   }
 }
 
+/* ----------------------- */
+/*  MEDIA   */
+/* ----------------------- */
 
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 968px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  .main-menu__btn {
+    display: block;
+  }
+
+  .main-menu {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+
+    &__list {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      flex-direction: column;
+      &__item {
+        text-align: center;
+        margin-bottom: 2%;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &__link {
+          font-size: 22px;
+        }
+      }
+    }
+
+    &--menu-show{
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .main-header {
+    &__top-content {
+      flex-wrap: wrap;
+    }
+    &__main-content {
+      top: 65%;
+    }
+  }
+
+  .logo-container {
+    margin: 0 auto;
+  }
+}

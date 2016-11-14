@@ -2,10 +2,10 @@
   padding: 20px 0;
   &__title {
     position: relative;
-    margin: 10px 0;
+    margin: 10px 0 15px;
     padding-left: 10px;
     font-family: $font-family1;
-    font-size: 26px;
+    font-size: 1.6rem;
     color: $text;
     font-weight: bold;
     line-height: 1;
@@ -53,6 +53,7 @@
     &__info-work {
       position: absolute;
       box-sizing: border-box;
+      border-radius: 6px;
       background: rgba(13,17,61, 0.8);
       padding: 3%;
       top: 0;
@@ -62,6 +63,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      text-decoration: none;
 
       opacity: 0;
       transition: all 0.3s ease;
@@ -80,19 +82,18 @@
       }
       &__name-work {
         font-family: $font-family1;
-        font-size: 22px;
+        font-size: 1.4rem;
         color: $white;
         font-weight: bold;
         line-height: 1.2;
       }
       &__category-work {
         font-family: $font-family1;
-        font-size: 15px;
+        font-size: 1.071rem;
         color: $white;
         line-height: 1.7;
       }
     }
-
 
     &:focus,
     &:hover{
@@ -101,4 +102,19 @@
       }
     }
   }
+}
+
+
+@media screen and (max-width: 768px){
+  .portfolio-block {
+    flex-wrap: wrap;
+    &__item{
+      margin: 10px;
+      flex: 1 1 40%;
+      height: 260px;
+    }
+  }
+}
+@media screen and (max-width: 480px){
+
 }

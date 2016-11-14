@@ -1,0 +1,60 @@
+
+// Blog -- list post
+.section-blog {
+  padding: 30px 0;
+  &__list {
+    &__item {
+      padding: 30px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.3s ease;
+
+      &__title-post {
+        flex: 0 0 60%;
+        &__link {
+          font-family: $font-family1;
+          font-size: 1.142rem;
+          color: $purple;
+          font-weight: bold;
+          line-height: 1.5;
+          text-decoration: none;
+        }
+      }
+      &__date-post {
+        font-family: $font-family1;
+        font-size: 1rem;
+        // color: rgb(162, 162, 162);
+        color: $gray;
+        line-height: 1.625;
+      }
+      &__author-block {
+        font-family: $font-family1;
+        font-size: 1.071rem;
+        color: $gray;
+        line-height: 1.4;
+        &__author-link {
+          color: $text;
+          text-decoration: none;
+        }
+      }
+
+      &:focus,
+      &:hover {
+        background: $purple;
+        .section-blog__list__item__title-post__link {
+          color: $white;
+        }
+        .section-blog__list__item__date-post {
+          color: $white;
+        }
+        .section-blog__list__item__author-block {
+          color: $white;
+          &__author-link {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

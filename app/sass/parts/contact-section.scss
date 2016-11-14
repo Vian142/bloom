@@ -6,13 +6,27 @@
     justify-content: space-between;
     align-items: center;
     &__text {
+      flex: 1 1 100%;
       font-family: $font-family1;
-      font-size: 24px;
+      font-size: 1.6rem;
       color: $white;
       line-height: 1.4;
       font-weight: bold;
     }
     &__btn-wrap {
+      flex: 0 0 230px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-contact__wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__btn-wrap{
+      padding-top: 10px;
     }
   }
 }

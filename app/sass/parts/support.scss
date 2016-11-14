@@ -18,17 +18,49 @@
       align-items: flex-end;
       &__image {
         display: block;
+        max-width: 100%;
+        width: 100%;
       }
     }
     &__text {
 
       ul {
         li {
-          font-size: 15px;
+          font-size: 1.071rem;
           font-family: $font-family1;
           color: rgb(97, 97, 97);
           line-height: 2;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-support {
+    &__wrap {
+      flex-wrap: nowrap;
+      &__left-block {
+        flex: 0 0 40%;
+      }
+      &__right-block {
+        flex: 1 1 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-support {
+    &__wrap {
+      flex-wrap: wrap;
+      &__left-block {
+        flex: 1 1 100%;
+        order: 1;
+      }
+      &__right-block {
+        flex: 1 1 100%;
+        order: 0;
       }
     }
   }

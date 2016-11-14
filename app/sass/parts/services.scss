@@ -2,10 +2,10 @@
   padding: 20px 0;
   &__title {
     position: relative;
-    margin: 10px 0;
+    margin: 10px 0 15px;
     padding-left: 10px;
     font-family: $font-family1;
-    font-size: 26px;
+    font-size: 1.6rem;
     color: $text;
     font-weight: bold;
     line-height: 1;
@@ -68,7 +68,7 @@
       padding: 10px 15px;
       color: $white;
       position: absolute;
-      top: 290px;
+      top: 80%;
       left: 0;
       right: 0;
       height: 100%;
@@ -82,7 +82,7 @@
         padding: 0;
         height: 25px;
 
-        font-size: 17px;
+        font-size: 1.214rem;
         font-family: $font-family1;
         color: $white;
         font-weight: normal;
@@ -99,18 +99,18 @@
           background: $white;
 
           position: absolute;
-          bottom: -10px;
+          bottom: -20px;
         }
       }
       &__description {
 
         font-family: $font-family1;
-        font-size: 14px;
+        font-size: 1rem;
         color: $white;
         line-height: 1.5;
         font-weight: normal;
         margin: 0;
-        padding: 10px 0 5px;
+        padding: 20px 0 5px;
       }
       &__btn-wrap {
         text-align: right;
@@ -120,6 +120,12 @@
           color: $white;
           font-weight: lighter;
           text-decoration: none;
+          transition: all 0.3s ease;
+          
+          &:focus,
+          &:hover{
+            color: $text;
+          }
         }
       }
     }
@@ -134,7 +140,7 @@
       text-align: right;
       &__link {
         font-family: $font-family1;
-        font-size: 18px;
+        font-size: 1.285rem;
         color: $white;
         font-weight: bold;
         line-height: 1.2;
@@ -147,10 +153,14 @@
           width: 90px;
           height: 4px;
           background: $white;
-
           position: absolute;
           bottom: -10px;
           right: 0;
+        }
+        
+        &:focus,
+        &:hover{
+          color: $gray;
         }
       }
     }
@@ -162,7 +172,33 @@
     border-radius: 6px;
     top: 0;
   }
-  .services-block__item__image-services:after{
+  .services-block__item__image-services:after {
     opacity: 0;
   }
+}
+
+/* media */
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 968px) {
+}
+
+@media screen and (max-width: 768px) {
+
+  .services-block {
+    flex-wrap: wrap;
+    &__item {
+      flex-basis: 30%;
+      height: 250px;
+      &__content-service {
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
 }
