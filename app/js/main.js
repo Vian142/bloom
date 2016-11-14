@@ -8,6 +8,15 @@ $(document).ready(function () {
     }).imagefill();
 
 
+    $(window).resize(function () {
+        if ($(window).width() > 768) {
+            if ($('#main-menu-button').hasClass('open')) {
+                $('#main-menu-button').removeClass('open');
+                $('#main-menu').removeClass('main-menu--menu-show');
+            }
+        }
+    });
+
     /* menu */
     $('#main-menu-button').click(function () {
         $(this).toggleClass('open');
